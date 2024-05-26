@@ -1,0 +1,86 @@
+body {
+    background-image: url('./imagen.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del cuerpo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login {
+    /* Fondo blanco con transparencia */
+    background-color: rgba(3, 110, 148, 0.197); /* Blanco con 50% de transparencia */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(11, 6, 6, 0.5); /* Sombra con 50% de transparencia */
+    max-width: 400px;
+    width: 100%;
+}
+
+
+.login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.login label i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    padding: 10px 10px 10px 30px; /* Ajusta el padding para dejar espacio para el icono */
+    margin-bottom: 15px;
+    border-radius: 10px;
+    outline: none;
+    /* border: 1px solid #ccc; */
+    width: calc(100% - 40px); /* Resta el ancho del padding izquierdo y derecho */
+    border: none;
+}
+
+
+.login input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #86198F;
+    color: white;
+    cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+    background-color: #BE185D;
+}
+
+.icono {
+    font-size: 200px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    color: #fbfbfb; /* Cambia esto al color que desees */
+}
+
+.hidden {
+    display: none;
+}
+
